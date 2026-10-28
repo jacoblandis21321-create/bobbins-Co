@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME   # <- change this
+  repo: jacoblandis21321-create/bobbins-Co
   branch: main
 media_folder: images
 public_folder: /images

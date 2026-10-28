@@ -168,7 +168,7 @@ var CATS=["Fall","Summer","Christmas","Mama","Baby & Kids","Game Day","Work & Ca
 var base=[];
 var dbItems=[],active="All",col=null,assets=null,canEdit=false;
 var $=function(i){return document.getElementById(i)};
-function thumb(u){return u.indexOf("/images/")===0?"/.netlify/images?url="+encodeURIComponent(u)+"&w=800":u}
+function thumb(u){return u.charAt(0)==="/"?"/.netlify/images?url="+encodeURIComponent(u)+"&w=800":u}
 function all(){return dbItems.concat(base)}
 function admin(){return canEdit&&col&&assets}
 function cats(){var s=CATS.slice();all().forEach(function(i){i.cats.forEach(function(c){if(s.indexOf(c)<0)s.push(c)})});return s}

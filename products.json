@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "image": "/images/wwjd-mixed-fabric-sweatshirt.jpg",
+      "image": "/wwjd-mixed-fabric-sweatshirt.jpg",
       "title": "WWJD mixed-fabric sweatshirt",
       "note": "Pick your prints",
       "categories": [
@@ -9,7 +9,7 @@
       ]
     },
     {
-      "image": "/images/tennessee-vols-sweatshirt.jpg",
+      "image": "/tennessee-vols-sweatshirt.jpg",
       "title": "Tennessee Vols sweatshirt",
       "note": "Plaid appliqué",
       "categories": [
@@ -18,7 +18,7 @@
       ]
     },
     {
-      "image": "/images/vols-gingham-tee.jpg",
+      "image": "/vols-gingham-tee.jpg",
       "title": "VOLS gingham tee",
       "note": "Appliqué",
       "categories": [
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "image": "/images/alabama-sweatshirt.jpg",
+      "image": "/alabama-sweatshirt.jpg",
       "title": "Alabama sweatshirt",
       "note": "Pearl accents",
       "categories": [
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "image": "/images/l-d-gingham-goose.jpg",
+      "image": "/l-d-gingham-goose.jpg",
       "title": "L&D gingham goose",
       "note": "Appliqué",
       "categories": [
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "image": "/images/labor-delivery-sweatshirt.jpg",
+      "image": "/labor-delivery-sweatshirt.jpg",
       "title": "Labor & delivery sweatshirt",
       "note": "Tone-on-tone bow",
       "categories": [
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "image": "/images/teacher-quarter-zip.jpg",
+      "image": "/teacher-quarter-zip.jpg",
       "title": "Teacher quarter-zip",
       "note": "Mascot sleeve",
       "categories": [
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "image": "/images/dental-bow-sweatshirt.jpg",
+      "image": "/dental-bow-sweatshirt.jpg",
       "title": "Dental bow sweatshirt",
       "note": "Tooth and tools",
       "categories": [
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "image": "/images/monogram-hoodie-romper.jpg",
+      "image": "/monogram-hoodie-romper.jpg",
       "title": "Monogram hoodie romper",
       "note": "Classic monogram",
       "categories": [
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "image": "/images/roll-tide-denim-dress.jpg",
+      "image": "/roll-tide-denim-dress.jpg",
       "title": "Roll Tide denim dress",
       "note": "Game day",
       "categories": [
@@ -86,7 +86,7 @@
       ]
     },
     {
-      "image": "/images/pumpkin-patch-romper.jpg",
+      "image": "/pumpkin-patch-romper.jpg",
       "title": "Pumpkin patch romper",
       "note": "Personalized name",
       "categories": [
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "image": "/images/santa-appliqu-sweatshirts.jpg",
+      "image": "/santa-appliqu-sweatshirts.jpg",
       "title": "Santa appliqué sweatshirts",
       "note": "Pink or sage, gingham hat",
       "categories": [
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "image": "/images/1-peter-4-10-sweatshirt.jpg",
+      "image": "/1-peter-4-10-sweatshirt.jpg",
       "title": "1 Peter 4:10 sweatshirt",
       "note": "Embroidered scripture",
       "categories": [
