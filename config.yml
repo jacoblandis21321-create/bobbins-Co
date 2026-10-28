@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME   # <- change this
+  branch: main
+media_folder: images
+public_folder: /images
+site_url: https://bowsandbobbinsco.com
+display_url: https://bowsandbobbinsco.com
+collections:
+  - name: shop
+    label: Shop
+    files:
+      - name: products
+        label: Products
+        file: products.json
+        format: json
+        fields:
+          - label: Products
+            name: products
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Photo, name: image, widget: image }
+              - { label: Name, name: title, widget: string }
+              - { label: Short note (optional), name: note, widget: string, required: false }
+              - label: Categories
+                name: categories
+                widget: select
+                multiple: true
+                options: ["Fall","Summer","Christmas","Mama","Baby & Kids","Game Day","Work & Career","Monograms","Appliqué","Faith"]
+              - { label: New category (optional), name: new_category, widget: string, required: false }
