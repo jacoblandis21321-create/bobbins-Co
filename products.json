@@ -112,6 +112,15 @@
         "Faith",
         "Monograms"
       ]
+    },
+    {
+      "image": "/images/img_6993.jpg",
+      "title": "Short name for item (Ex. WWJD mixed-fabric sweatshirt)",
+      "note": "Short description of the item ",
+      "categories": [
+        "Monograms",
+        "Faith"
+      ]
     }
   ]
 }
