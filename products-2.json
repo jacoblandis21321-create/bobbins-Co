@@ -1,0 +1,238 @@
+{
+  "products": [
+    {
+      "image": "/weston-bass-fish-sweatshirt.jpg",
+      "title": "Bass fish name sweatshirt",
+      "note": "Personalized name",
+      "categories": [
+        "Names"
+      ]
+    },
+    {
+      "image": "/mama-est-2026-sweatshirt.jpg",
+      "title": "MAMA Est. 2026 sweatshirt",
+      "note": "Duck print appliqué",
+      "categories": [
+        "Mama",
+        "Appliqué"
+      ]
+    },
+    {
+      "image": "/grundy-family-sweatshirts.jpg",
+      "title": "GRUNDY family sweatshirts",
+      "note": "Polka dot appliqué, two sizes",
+      "categories": [
+        "Appliqué",
+        "Names"
+      ]
+    },
+    {
+      "image": "/ttu-applique-sweatshirt.jpg",
+      "title": "TTU appliqué sweatshirt",
+      "note": "Purple and gold",
+      "categories": [
+        "Game Day",
+        "Appliqué"
+      ]
+    },
+    {
+      "image": "/lou-who-christmas-set.jpg",
+      "title": "Lou Who Christmas set",
+      "note": "Scalloped hem, name in script",
+      "categories": [
+        "Christmas",
+        "Scalloped Sets",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/floral-monogram-set.jpg",
+      "title": "Floral monogram set",
+      "note": "Scalloped appliqué monogram",
+      "categories": [
+        "Scalloped Sets",
+        "Monograms",
+        "Appliqué"
+      ]
+    },
+    {
+      "image": "/star-name-set.jpg",
+      "title": "Star name set",
+      "note": "Name with colorful stars",
+      "categories": [
+        "Scalloped Sets",
+        "Names",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/bow-print-monogram-set.jpg",
+      "title": "Bow print monogram set",
+      "note": "Scalloped hem",
+      "categories": [
+        "Scalloped Sets",
+        "Monograms",
+        "Appliqué"
+      ]
+    },
+    {
+      "image": "/floral-bow-applique.jpg",
+      "title": "Floral bow appliqué",
+      "note": "Name inside the bow",
+      "categories": [
+        "Appliqué",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/star-name-sweatshirt.jpg",
+      "title": "Star name sweatshirt",
+      "note": "Bright thread and stars",
+      "categories": [
+        "Names",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/tone-on-tone-name-set.jpg",
+      "title": "Tone-on-tone name set",
+      "note": "First and middle name",
+      "categories": [
+        "Scalloped Sets",
+        "Names",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/christmas-tree-sets.jpg",
+      "title": "Christmas tree sets",
+      "note": "Scalloped set in red, cuffed set in green",
+      "categories": [
+        "Christmas",
+        "Scalloped Sets",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/blessed-gingham-applique.jpg",
+      "title": "BLESSED gingham appliqué",
+      "note": "Brown gingham and floral",
+      "categories": [
+        "Appliqué"
+      ]
+    },
+    {
+      "image": "/wwjd-mixed-fabric-sweatshirt.jpg",
+      "title": "WWJD mixed-fabric sweatshirt",
+      "note": "Pick your prints",
+      "categories": [
+        "Appliqué"
+      ]
+    },
+    {
+      "image": "/tennessee-vols-sweatshirt.jpg",
+      "title": "Tennessee Vols sweatshirt",
+      "note": "Plaid appliqué",
+      "categories": [
+        "Game Day",
+        "Fall"
+      ]
+    },
+    {
+      "image": "/vols-gingham-tee.jpg",
+      "title": "VOLS gingham tee",
+      "note": "Appliqué",
+      "categories": [
+        "Game Day"
+      ]
+    },
+    {
+      "image": "/alabama-sweatshirt.jpg",
+      "title": "Alabama sweatshirt",
+      "note": "Pearl accents",
+      "categories": [
+        "Game Day"
+      ]
+    },
+    {
+      "image": "/l-d-gingham-goose.jpg",
+      "title": "L&D gingham goose",
+      "note": "Appliqué",
+      "categories": [
+        "Mama",
+        "Work & Career"
+      ]
+    },
+    {
+      "image": "/labor-delivery-sweatshirt.jpg",
+      "title": "Labor & delivery sweatshirt",
+      "note": "Tone-on-tone bow",
+      "categories": [
+        "Mama",
+        "Work & Career"
+      ]
+    },
+    {
+      "image": "/teacher-quarter-zip.jpg",
+      "title": "Teacher quarter-zip",
+      "note": "Mascot sleeve",
+      "categories": [
+        "Work & Career"
+      ]
+    },
+    {
+      "image": "/dental-bow-sweatshirt.jpg",
+      "title": "Dental bow sweatshirt",
+      "note": "Tooth and tools",
+      "categories": [
+        "Work & Career"
+      ]
+    },
+    {
+      "image": "/monogram-hoodie-romper.jpg",
+      "title": "Monogram hoodie romper",
+      "note": "Classic monogram",
+      "categories": [
+        "Monograms",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/roll-tide-denim-dress.jpg",
+      "title": "Roll Tide denim dress",
+      "note": "Game day",
+      "categories": [
+        "Game Day",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/pumpkin-patch-romper.jpg",
+      "title": "Pumpkin patch romper",
+      "note": "Personalized name",
+      "categories": [
+        "Fall",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/santa-appliqu-sweatshirts.jpg",
+      "title": "Santa appliqué sweatshirts",
+      "note": "Pink or sage, gingham hat",
+      "categories": [
+        "Christmas",
+        "Baby & Kids",
+        "Appliqué"
+      ]
+    },
+    {
+      "image": "/1-peter-4-10-sweatshirt.jpg",
+      "title": "1 Peter 4:10 sweatshirt",
+      "note": "Embroidered scripture",
+      "categories": [
+        "Faith",
+        "Monograms"
+      ]
+    }
+  ]
+}

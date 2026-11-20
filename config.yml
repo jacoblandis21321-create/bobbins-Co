@@ -24,7 +24,7 @@ collections:
               - { label: Photo, name: image, widget: image }
               - { label: Name, name: title, widget: string }
               - { label: Short note (optional), name: note, widget: string, required: false }
-              - { label: Fabric (optional), name: fabric, widget: string, required: false, hint: "What fabric is it? For example: blue floral, gingham, duck print" }
+              - { label: Fabric (what it is made of), name: fabric, widget: string, required: false, hint: "What is the garment made of? For example: cotton fleece, cotton jersey, cotton-poly blend" }
               - label: Categories
                 name: categories
                 widget: select
