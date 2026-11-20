@@ -1,12 +1,141 @@
 {
   "products": [
     {
+      "image": "/images/weston-bass-fish-sweatshirt.jpg",
+      "title": "Bass fish name sweatshirt",
+      "note": "Personalized name",
+      "categories": [
+        "Names"
+      ]
+    },
+    {
+      "image": "/images/mama-est-2026-sweatshirt.jpg",
+      "title": "MAMA Est. 2026 sweatshirt",
+      "note": "Duck print appliqué",
+      "categories": [
+        "Mama",
+        "Appliqué"
+      ],
+      "fabric": "Duck print"
+    },
+    {
+      "image": "/images/grundy-family-sweatshirts.jpg",
+      "title": "GRUNDY family sweatshirts",
+      "note": "Polka dot appliqué, two sizes",
+      "categories": [
+        "Appliqué",
+        "Names"
+      ],
+      "fabric": "Purple with white polka dots"
+    },
+    {
+      "image": "/images/ttu-applique-sweatshirt.jpg",
+      "title": "TTU appliqué sweatshirt",
+      "note": "Purple and gold",
+      "categories": [
+        "Game Day",
+        "Appliqué"
+      ],
+      "fabric": "Solid purple"
+    },
+    {
+      "image": "/images/lou-who-christmas-set.jpg",
+      "title": "Lou Who Christmas set",
+      "note": "Scalloped hem, name in script",
+      "categories": [
+        "Christmas",
+        "Scalloped Sets",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/images/floral-monogram-set.jpg",
+      "title": "Floral monogram set",
+      "note": "Scalloped appliqué monogram",
+      "categories": [
+        "Scalloped Sets",
+        "Monograms",
+        "Appliqué"
+      ],
+      "fabric": "Blue and yellow floral"
+    },
+    {
+      "image": "/images/star-name-set.jpg",
+      "title": "Star name set",
+      "note": "Name with colorful stars",
+      "categories": [
+        "Scalloped Sets",
+        "Names",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/images/bow-print-monogram-set.jpg",
+      "title": "Bow print monogram set",
+      "note": "Scalloped hem",
+      "categories": [
+        "Scalloped Sets",
+        "Monograms",
+        "Appliqué"
+      ],
+      "fabric": "Blue and pink bow print"
+    },
+    {
+      "image": "/images/floral-bow-applique.jpg",
+      "title": "Floral bow appliqué",
+      "note": "Name inside the bow",
+      "categories": [
+        "Appliqué",
+        "Baby & Kids"
+      ],
+      "fabric": "Bright floral"
+    },
+    {
+      "image": "/images/star-name-sweatshirt.jpg",
+      "title": "Star name sweatshirt",
+      "note": "Bright thread and stars",
+      "categories": [
+        "Names",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/images/tone-on-tone-name-set.jpg",
+      "title": "Tone-on-tone name set",
+      "note": "First and middle name",
+      "categories": [
+        "Scalloped Sets",
+        "Names",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/images/christmas-tree-sets.jpg",
+      "title": "Christmas tree sets",
+      "note": "Scalloped set in red, cuffed set in green",
+      "categories": [
+        "Christmas",
+        "Scalloped Sets",
+        "Baby & Kids"
+      ]
+    },
+    {
+      "image": "/images/blessed-gingham-applique.jpg",
+      "title": "BLESSED gingham appliqué",
+      "note": "Brown gingham and floral",
+      "categories": [
+        "Appliqué"
+      ],
+      "fabric": "Brown gingham and floral"
+    },
+    {
       "image": "/wwjd-mixed-fabric-sweatshirt.jpg",
       "title": "WWJD mixed-fabric sweatshirt",
       "note": "Pick your prints",
       "categories": [
         "Appliqué"
-      ]
+      ],
+      "fabric": "Mixed prints"
     },
     {
       "image": "/tennessee-vols-sweatshirt.jpg",
@@ -15,7 +144,8 @@
       "categories": [
         "Game Day",
         "Fall"
-      ]
+      ],
+      "fabric": "Plaid"
     },
     {
       "image": "/vols-gingham-tee.jpg",
@@ -23,7 +153,8 @@
       "note": "Appliqué",
       "categories": [
         "Game Day"
-      ]
+      ],
+      "fabric": "Gingham"
     },
     {
       "image": "/alabama-sweatshirt.jpg",
@@ -40,7 +171,8 @@
       "categories": [
         "Mama",
         "Work & Career"
-      ]
+      ],
+      "fabric": "Gingham"
     },
     {
       "image": "/labor-delivery-sweatshirt.jpg",

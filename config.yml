@@ -18,14 +18,16 @@ collections:
           - label: Products
             name: products
             widget: list
+            add_to_top: true
             summary: "{{fields.title}}"
             fields:
               - { label: Photo, name: image, widget: image }
               - { label: Name, name: title, widget: string }
               - { label: Short note (optional), name: note, widget: string, required: false }
+              - { label: Fabric (optional), name: fabric, widget: string, required: false, hint: "What fabric is it? For example: blue floral, gingham, duck print" }
               - label: Categories
                 name: categories
                 widget: select
                 multiple: true
-                options: ["Fall","Summer","Christmas","Mama","Baby & Kids","Game Day","Work & Career","Monograms","Appliqué","Faith"]
+                options: ["Fall","Summer","Christmas","Scalloped Sets","Mama","Baby & Kids","Game Day","Work & Career","Monograms","Appliqué","Faith","Names"]
               - { label: New category (optional), name: new_category, widget: string, required: false }

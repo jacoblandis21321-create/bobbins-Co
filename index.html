@@ -31,7 +31,6 @@ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:en
 :root[data-theme="dark"]{--bg:#241a28;--surface:#32243a;--ink:#fbeee4;--muted:#cdb9d0;--pink:#ff7aa8;--teal:#4fd1d1;--purple:#c79be0;--line:#4a3855;--soft:#3d2a47}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 *{box-sizing:border-box}
-html,body{max-width:100%;overflow-x:clip}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 'Nunito',system-ui,sans-serif}
 h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.15;margin:0}
 a{color:inherit}
@@ -89,7 +88,7 @@ footer{text-align:center;padding:32px 20px;color:var(--muted);border-top:2px dot
 footer strong{font-family:'Fraunces',serif;color:var(--pink)}
 #lb{position:fixed;inset:0;background:rgba(30,15,35,.88);display:none;align-items:center;justify-content:center;z-index:20;padding:20px}
 #lb.on{display:flex}#lb img{max-width:100%;max-height:100%;border-radius:14px}
-@media(max-width:720px){.about,.two{grid-template-columns:1fr}nav a{margin-left:12px}.nav .wrap{flex-wrap:wrap;justify-content:center;row-gap:6px}nav{display:flex;flex-wrap:wrap;justify-content:center;gap:2px 4px}nav a{margin-left:10px}.btn.alt{margin:10px 0 0}.title h2{font-size:1.8rem}}
+@media(max-width:720px){.about,.two{grid-template-columns:1fr}nav a{margin-left:12px}.btn.alt{margin:10px 0 0}.title h2{font-size:1.8rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .card .acts{padding:0 14px 14px;display:flex;gap:8px;flex-wrap:wrap}
 .mini{border:2px solid var(--pink);background:transparent;color:var(--pink);border-radius:999px;padding:5px 14px;font:700 .85rem 'Nunito',sans-serif;cursor:pointer}
@@ -101,11 +100,24 @@ footer strong{font-family:'Fraunces',serif;color:var(--pink)}
 .checks label{font-weight:600;display:flex;align-items:center;gap:6px}
 .checks input{width:auto;margin:0}
 .hint{color:var(--muted);font-size:.9rem;margin:0}
+
+.info{max-width:760px;margin:30px auto 0;background:var(--surface);border:2px dashed var(--pink);border-radius:18px;padding:20px;display:grid;gap:16px}
+.info h3{font-size:1.2rem;color:var(--teal);margin-bottom:8px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{border:2px solid var(--teal);border-radius:999px;padding:4px 14px;font-weight:700;font-size:.92rem;color:var(--teal)}
+.cta{text-align:center;margin:30px 0 0}
+.card figcaption small.fab{color:var(--teal)}
+.pill i{display:inline-block;width:14px;height:14px;border-radius:50%;border:1px solid rgba(0,0,0,.25);margin-right:7px;vertical-align:-2px}
+[hidden]{display:none!important}
+nav{display:flex;flex-wrap:wrap;gap:2px 16px;justify-content:flex-end}
+nav a{margin-left:0}
+.nav .wrap{flex-wrap:wrap}
+@media(max-width:720px){.nav .wrap{justify-content:center}nav{justify-content:center;width:100%;gap:2px 14px}nav a{font-size:.88rem}}
 </style>
 </head>
 <body>
 <header class="nav"><div class="wrap"><a class="brand" href="#top" aria-label="Bows and Bobbins, back to top"><svg class="logo" viewBox="0 0 184 34" aria-hidden="true"><defs><clipPath id="lcp"><rect class="lrev" x="0" y="0" height="34"/></clipPath></defs><text class="lt lfill" x="2" y="25"><tspan class="p">Bows </tspan><tspan class="t">&amp; </tspan><tspan class="u">Bobbins</tspan></text><g clip-path="url(#lcp)"><text class="lt lline" x="2" y="25"><tspan class="p">Bows </tspan><tspan class="t">&amp; </tspan><tspan class="u">Bobbins</tspan></text></g><circle class="lneedle" cx="2" cy="4" r="2.5"/></svg></a>
-<nav><a href="#shop">Shop</a><a href="#custom">Custom</a><a href="#about">About</a><a href="#order">Order</a></nav></div></header>
+<nav><a href="#shop">Shop</a><a href="#sets">Sets</a><a href="#custom">Custom</a><a href="#about">About</a><a href="#order">Order</a></nav></div></header>
 
 <main id="top">
 <div class="hero wrap">
@@ -117,15 +129,14 @@ footer strong{font-family:'Fraunces',serif;color:var(--pink)}
 <section id="shop"><div class="wrap">
 <div class="title"><h2>Fresh off the machine</h2><p>Tap a photo to see it bigger.</p><div class="stitch"></div></div>
 <div class="chips" id="chips"></div>
-<div id="admin" hidden><h3>Add a new piece</h3>
-<p class="hint">Only you see this box. Pick a photo, name it and tick every category it belongs in.</p>
-<label>Photo<input type="file" id="aFile" accept="image/*"></label>
-<label>Name<input id="aTitle" placeholder="Pumpkin patch romper"></label>
-<label>Short note (optional)<input id="aSub" placeholder="Personalized name"></label>
-<div class="checks" id="aCats"></div>
-<label>Or add a new category<input id="aNew" placeholder="Valentine’s Day"></label>
-<button class="btn" type="button" id="aGo">Add to shop</button><p class="hint" id="aMsg" role="status"></p></div>
 <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="sets" class="band"><div class="wrap">
+<div class="title"><h2>Scalloped sets</h2><p>A sweatshirt and pants with matching scalloped hems, personalized just for them.</p><div class="stitch"></div></div>
+<div class="grid" id="gSets"></div>
+<div class="info" id="setInfo" hidden></div>
+<p class="cta"><a class="btn" href="#order">Order a set</a></p>
 </div></section>
 
 <section id="custom" class="band"><div class="wrap">
@@ -164,58 +175,44 @@ footer strong{font-family:'Fraunces',serif;color:var(--pink)}
 
 <script>
 var EMAIL="bowsandbobbins9@gmail.com";
-var CATS=["Fall","Summer","Christmas","Mama","Baby & Kids","Game Day","Work & Career","Monograms","Appliqué","Faith"];
-var base=[];
-var dbItems=[],active="All",col=null,assets=null,canEdit=false;
+var ORDER=["Fall","Summer","Christmas","Scalloped Sets","Mama","Baby & Kids","Game Day","Work & Career","Monograms","Appliqué","Faith","Names"];
+var items=[],active="All";
 var $=function(i){return document.getElementById(i)};
-function thumb(u){return u.charAt(0)==="/"?"/.netlify/images?url="+encodeURIComponent(u)+"&w=800":u}
-function all(){return dbItems.concat(base)}
-function admin(){return canEdit&&col&&assets}
-function cats(){var s=CATS.slice();all().forEach(function(i){i.cats.forEach(function(c){if(s.indexOf(c)<0)s.push(c)})});return s}
-function has(c){return all().some(function(i){return i.cats.indexOf(c)>-1})}
+var SET_SIZES=[],SET_COLORS=[{n:"Cream",h:"#f8e7d6"},{n:"Red",h:"#db202e"},{n:"Mint",h:"#bdddb6"},{n:"Bright Mint",h:"#94efbd"},{n:"Mint Floral",h:"#c9dccb"},{n:"Blue",h:"#a9c3f2"},{n:"Lavender",h:"#d6c5ec"},{n:"Pink",h:"#fdb5c3"},{n:"Hot Pink",h:"#fd91bb"},{n:"Navy",h:"#26355e"}];
+function norm(p){var c=(p.categories||[]).slice(),n=(p.new_category||"").trim();if(n&&c.indexOf(n)<0)c.push(n);
+ return{src:p.image||"",title:p.title||"",sub:p.note||"",fabric:(p.fabric||"").trim(),cats:c}}
+function cats(){var seen={};items.forEach(function(i){i.cats.forEach(function(c){seen[c]=1})});
+ var out=ORDER.filter(function(c){return seen[c]});Object.keys(seen).forEach(function(c){if(out.indexOf(c)<0)out.push(c)});return out}
+function card(i){
+ var f=document.createElement("figure");f.className="card";
+ var im=document.createElement("img");im.src=i.src;im.alt=i.title+" embroidered by Bows & Bobbins";im.loading="lazy";
+ im.onclick=function(){$("lb").firstChild.src=i.src;$("lb").className="on"};
+ var cp=document.createElement("figcaption");cp.textContent=i.title;
+ if(i.sub){var s=document.createElement("small");s.textContent=i.sub;cp.appendChild(s)}
+ if(i.fabric){var fb=document.createElement("small");fb.className="fab";fb.textContent="Fabric: "+i.fabric;cp.appendChild(fb)}
+ var a=document.createElement("div");a.className="acts";
+ var p=document.createElement("button");p.type="button";p.className="mini";p.textContent="Personalize this";
+ p.onclick=function(){$("piece").value=i.title;location.hash="#order";setTimeout(function(){$("pers").focus()},400)};
+ a.appendChild(p);f.appendChild(im);f.appendChild(cp);f.appendChild(a);return f}
 function render(){
  var chips=$("chips");chips.innerHTML="";
- ["All"].concat(cats().filter(function(c){return admin()||has(c)})).forEach(function(c){
+ ["All"].concat(cats()).forEach(function(c){
   var b=document.createElement("button");b.className="chip";b.type="button";b.textContent=c;
   b.setAttribute("aria-pressed",c===active);b.onclick=function(){active=c;render()};chips.appendChild(b)});
  var g=$("grid");g.innerHTML="";
- all().forEach(function(i){
-  if(active!=="All"&&i.cats.indexOf(active)<0)return;
-  var f=document.createElement("figure");f.className="card";
-  var im=document.createElement("img");im.src=thumb(i.src);im.onerror=function(){im.onerror=null;im.src=i.src};im.alt=i.title+" embroidered by Bows & Bobbins";im.loading="lazy";
-  im.onclick=function(){$("lb").firstChild.src=i.src;$("lb").className="on"};
-  var cp=document.createElement("figcaption");cp.textContent=i.title;
-  if(i.sub){var s=document.createElement("small");s.textContent=i.sub;cp.appendChild(s)}
-  var a=document.createElement("div");a.className="acts";
-  var p=document.createElement("button");p.type="button";p.className="mini";p.textContent="Personalize this";
-  p.onclick=function(){$("piece").value=i.title;location.hash="#order";setTimeout(function(){$("pers").focus()},400)};
-  a.appendChild(p);
-  if(admin()&&i.id){var d=document.createElement("button");d.type="button";d.className="mini del";d.textContent="Remove";
-   d.onclick=function(){if(confirm("Remove “"+i.title+"”?"))col.doc(i.id).delete()};a.appendChild(d)}
-  f.appendChild(im);f.appendChild(cp);f.appendChild(a);g.appendChild(f);
- });
- $("admin").hidden=!admin();
- if(admin()){var box=$("aCats"),keep=[].filter.call(box.querySelectorAll("input:checked"),function(x){return 1}).map(function(x){return x.value});
-  box.innerHTML="";cats().forEach(function(c){var l=document.createElement("label"),x=document.createElement("input");
-   x.type="checkbox";x.value=c;x.checked=keep.indexOf(c)>-1;l.appendChild(x);l.appendChild(document.createTextNode(c));box.appendChild(l)})}
-}
-function shrink(file){return createImageBitmap(file).then(function(b){
- var r=Math.min(1,1000/b.width),c=document.createElement("canvas");c.width=Math.round(b.width*r);c.height=Math.round(b.height*r);
- c.getContext("2d").drawImage(b,0,0,c.width,c.height);
- return new Promise(function(ok){c.toBlob(ok,"image/jpeg",.82)})})}
-$("aGo").onclick=function(){
- var f=$("aFile").files[0],t=$("aTitle").value.trim(),m=$("aMsg"),
- sel=[].map.call($("aCats").querySelectorAll("input:checked"),function(x){return x.value}),nw=$("aNew").value.trim();
- if(nw&&sel.indexOf(nw)<0)sel.push(nw);
- if(!f||!t||!sel.length){m.textContent="Add a photo, a name and at least one category.";return}
- m.textContent="Uploading…";$("aGo").disabled=true;
- shrink(f).then(function(bl){return assets.upload(bl)}).then(function(r){
-  return col.doc("i"+Date.now()).set({id:r.id,title:t,sub:$("aSub").value.trim(),cats:sel,t:Date.now()})})
- .then(function(){m.textContent="Added!";$("aFile").value="";$("aTitle").value="";$("aSub").value="";$("aNew").value="";
-  [].forEach.call($("aCats").querySelectorAll("input"),function(x){x.checked=false})})
- .catch(function(e){m.textContent="Couldn’t add it: "+(e&&e.message||"try again")})
- .then(function(){$("aGo").disabled=false});
-};
+ items.forEach(function(i){if(active==="All"||i.cats.indexOf(active)>-1)g.appendChild(card(i))});
+ var h=$("gSets");h.innerHTML="";
+ items.forEach(function(i){if(i.cats.indexOf("Scalloped Sets")>-1)h.appendChild(card(i))});
+ $("sets").hidden=!h.children.length}
+function pills(t,list){var d=document.createElement("div"),h=document.createElement("h3"),w=document.createElement("div");h.textContent=t;w.className="pills";
+ list.forEach(function(x){var p=document.createElement("span");p.className="pill";
+  if(typeof x==="object"){var sw=document.createElement("i");sw.style.background=x.h;p.appendChild(sw);p.appendChild(document.createTextNode(x.n))}else p.textContent=x;
+  w.appendChild(p)});d.appendChild(h);d.appendChild(w);return d}
+function setInfo(){var b=$("setInfo");b.innerHTML="";if(!SET_SIZES.length&&!SET_COLORS.length){b.hidden=true;return}
+ if(SET_SIZES.length)b.appendChild(pills("Sizes",SET_SIZES));if(SET_COLORS.length)b.appendChild(pills("Colors",SET_COLORS));b.hidden=false}
+fetch("/products.json",{cache:"no-cache"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){
+ items=(d.products||[]).map(norm);render();setInfo()}).catch(function(){
+ $("grid").innerHTML="<p class=\"hint\" style=\"grid-column:1/-1;text-align:center\">We couldn’t load the shop just now. Please refresh the page.</p>"});
 $("lb").onclick=function(){$("lb").className=""};
 document.addEventListener("keydown",function(e){if(e.key==="Escape")$("lb").className=""});
 $("f").onsubmit=function(e){
@@ -228,21 +225,6 @@ $("f").onsubmit=function(e){
  .catch(function(){m.textContent="We couldn’t send that here, so your email app will open instead.";mail()})
  .then(function(){btn.disabled=false});
 };
-render();
-fetch("/products.json",{cache:"no-cache"}).then(function(r){return r.json()}).then(function(d){
- base=(d.products||[]).map(function(p){var c=(p.categories||[]).slice();if(p.new_category&&c.indexOf(p.new_category)<0)c.push(p.new_category);
-  return{src:p.image,cats:c,title:p.title||"",sub:p.note||""}}).reverse();render()}).catch(function(){});
-(async function(){
- if(!window.claude)return;
- try{
-  var u=await claude.use("user");canEdit=!!(u&&u.canEdit());
-  var db=await claude.use("db");
-  if(db){col=db.collection("items");col.onSnapshot(function(s){
-   dbItems=s.docs.map(function(d){var x=d.data();return{id:d.id,src:"/_blob/"+x.id,cats:x.cats||[],title:x.title||"",sub:x.sub||"",t:x.t||0}}).sort(function(a,b){return b.t-a.t});render()},function(){})}
-  if(canEdit)assets=await claude.use("assets");
-  render();
- }catch(e){}
-})();
 </script>
 </body>
 </html>
