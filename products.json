@@ -16,7 +16,7 @@
         "Mama",
         "Appliqué"
       ],
-      "fabric": "Duck print"
+      "fabric": ""
     },
     {
       "image": "/grundy-family-sweatshirts.jpg",
@@ -26,7 +26,7 @@
         "Appliqué",
         "Names"
       ],
-      "fabric": "Purple with white polka dots"
+      "fabric": ""
     },
     {
       "image": "/ttu-applique-sweatshirt.jpg",
@@ -36,12 +36,12 @@
         "Game Day",
         "Appliqué"
       ],
-      "fabric": "Solid purple"
+      "fabric": ""
     },
     {
       "image": "/lou-who-christmas-set.jpg",
       "title": "Lou Who Christmas set",
-      "note": "Scalloped hem, name in script",
+      "note": "",
       "categories": [
         "Christmas",
         "Scalloped Sets",
@@ -57,7 +57,7 @@
         "Monograms",
         "Appliqué"
       ],
-      "fabric": "Blue and yellow floral"
+      "fabric": ""
     },
     {
       "image": "/star-name-set.jpg",
